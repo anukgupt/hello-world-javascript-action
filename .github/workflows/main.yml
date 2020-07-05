@@ -30,6 +30,12 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+        
+      # To use this repository's private action,
+      # you must check out the repository
+    - name: Checkout
+      uses: actions/checkout@v2
+ 
     
     # uses action to print hello[who-to-greet]
     - name: Hello world action step
